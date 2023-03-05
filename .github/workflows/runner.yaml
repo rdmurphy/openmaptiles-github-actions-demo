@@ -35,3 +35,9 @@ jobs:
 
       - name: Create and import SQL functions
         run: make import-sql
+
+      - name: Generate bbox file
+        run: make generate-bbox-file
+
+      - name: Generate tiles
+        run: make generate-tiles-pg
