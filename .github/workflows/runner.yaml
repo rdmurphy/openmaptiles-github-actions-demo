@@ -2,6 +2,9 @@ name: OpenMapTiles
 
 on: [push]
 
+env:
+  area: albania
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,3 +23,9 @@ jobs:
 
       - name: Import external data
         run: make import-data
+
+      - name: Download data extracts
+        run: make download
+
+      - name: Import OSM data
+        run: make import-osm
