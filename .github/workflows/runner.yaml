@@ -41,3 +41,9 @@ jobs:
 
       - name: Generate tiles
         run: make generate-tiles-pg
+
+      - name: Upload the .mbtiles file
+        uses: actions/upload-artifact@v3
+        with:
+          name: output
+          path: data/tiles.mbtiles
