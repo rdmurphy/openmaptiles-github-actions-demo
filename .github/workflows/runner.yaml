@@ -14,3 +14,9 @@ jobs:
 
       - name: Setup environment
         run: make
+
+      - name: Start up the database
+        run: make start-db
+
+      - name: Import external data
+        run: make import-data
