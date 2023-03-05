@@ -4,6 +4,7 @@ on: [push]
 
 env:
   area: us/rhode-island
+  MAX_ZOOM: 14
 
 jobs:
   build:
