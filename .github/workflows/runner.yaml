@@ -3,7 +3,7 @@ name: OpenMapTiles
 on: [push]
 
 env:
-  area: north-america/us/california/socal
+  area: us/rhode-island
 
 jobs:
   build:
@@ -25,7 +25,7 @@ jobs:
         run: make import-data
 
       - name: Download data extracts
-        run: make download
+        run: make download-geofabrik
 
       - name: Import OSM data
         run: make import-osm
