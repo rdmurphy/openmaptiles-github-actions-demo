@@ -29,3 +29,9 @@ jobs:
 
       - name: Import OSM data
         run: make import-osm
+
+      - name: Import Wikidata
+        run: make import-wikidata
+
+      - name: Create and import SQL functions
+        run: make import-sql
