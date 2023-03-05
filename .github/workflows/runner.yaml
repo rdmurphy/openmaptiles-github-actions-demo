@@ -3,7 +3,7 @@ name: OpenMapTiles
 on: [push]
 
 env:
-  area: albania
+  area: north-america/us/california/socal
 
 jobs:
   build:
