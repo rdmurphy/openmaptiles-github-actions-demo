@@ -3,7 +3,7 @@ name: OpenMapTiles
 on: [push]
 
 env:
-  area: us/rhode-island
+  area: socal
   MAX_ZOOM: 14
 
 jobs:
