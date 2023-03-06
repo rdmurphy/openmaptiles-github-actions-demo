@@ -3,7 +3,7 @@ name: OpenMapTiles
 on: [push]
 
 env:
-  area: socal
+  area: california
   MAX_ZOOM: 14
 
 jobs:
@@ -42,6 +42,9 @@ jobs:
 
       - name: Generate tiles
         run: make generate-tiles-pg
+
+      - name: Stop PostgreSQL service
+        run: make stop-db
 
       - name: Upload the .mbtiles file
         uses: actions/upload-artifact@v3
