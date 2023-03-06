@@ -3,7 +3,7 @@ name: OpenMapTiles
 on: [push]
 
 env:
-  area: california
+  area: us-pacific
   MAX_ZOOM: 14
 
 jobs:
